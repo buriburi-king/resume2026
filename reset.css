@@ -37,7 +37,7 @@ img {
 body {
   min-width: 320px;
   background-color: #1b3022;
-  color: #fff;
+  color: #000;
   line-height: 1.5;
 }
 /* 배경색이랑 최소 320px 되면 사이트 못줄이게하고 글자색은 흰색 줄간격 */
