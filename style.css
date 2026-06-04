@@ -154,7 +154,7 @@
 /* 프로필 */
 .profile-intro {
   margin-top: 135px;
-  margin-bottom: 320px;
+  margin-bottom: 322px;
 }
 .profile-intro__title,
 .profile-skills__title {
@@ -196,3 +196,31 @@
   font-size: 18px;
 }
 /* skills__sitck-bar */
+.profile-skills__stick-box {
+  flex: 1;
+  height: 18px;
+  background-color: #cac5b1;
+  border-radius: 10px;
+  margin: 0 20px;
+}
+.profile-skills__stick-bar {
+  height: 100%;
+  border-radius: 10px;
+}
+.profile-skills__stick-bar--html {
+  background-color: #254c34;
+}
+.profile-skills__stick-bar--css {
+  background-color: #4a7c59;
+}
+.profile-skills__stick-bar--git {
+  background-color: #9cb380;
+}
+.profile-skills__percent {
+  font-size: 18px;
+  color: #000;
+  width: 45px;
+  text-align: right;
+  flex-shrink: 0;
+}
+/* skills detail */
