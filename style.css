@@ -44,4 +44,23 @@
   width: 1040px;
   margin: 0 auto;
   background-color: #f9f9f9;
+  display: flex;
+  padding: 50px 30px;
+  gap: 44px;
+}
+.profile-card__left {
+  width: 336px;
+  flex-shrink: 0;
+}
+.profile-card__right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 100px; /* 오른쪽 수직 갭 */
+}
+/* skills__stick-bar*/
+.profile-skills__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
