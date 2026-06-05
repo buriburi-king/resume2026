@@ -348,6 +348,88 @@
   max-height: 500px;
   opacity: 1;
 }
+/*--------------------3page--------------------*/
+.projects {
+  width: 1040px;
+  margin: 0 auto 50px auto;
+  background-color: #cac5b1;
+  border-radius: 5px;
+}
+.projects__container {
+  padding: 0 70px 85px 70px;
+  display: flex;
+  flex-direction: column;
+}
+.projects__main-title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #1b3022;
+  text-align: center;
+  margin-top: 185px;
+  margin-bottom: 215px;
+}
+.project-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+/* 왼 + 오 */
+.project-item__info-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 300px;
+}
+/* 왼 */
+.project-item__text-side {
+  max-width: 700px;
+}
+/* 소제목 */
+.project-item__title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #1b3022;
+  margin-bottom: 15px;
+}
+/* 설명 */
+.project-item__content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.project-item__content-text {
+  font-size: 18px;
+  color: #000;
+}
+/* 오른쪽 */
+.project-item__badge-side {
+  flex-shrink: 0;
+}
+.project-item__badge-img {
+  width: 224px;
+  height: auto;
+  object-fit: contain;
+}
+/* 웹 */
+.project-item__img-wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.project-item__img-list {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+.project-item__img-item {
+  width: 100%;
+  line-height: 0;
+}
+.project-item__img {
+  width: 100%;
+  height: auto;
+}
 /*--------------------4page--------------------*/
 .hobby {
   width: 1040px;
