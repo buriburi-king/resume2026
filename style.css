@@ -88,6 +88,15 @@
   height: 405px;
   overflow: hidden;
   border-radius: 8px;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+  cursor: pointer;
+}
+/* 호버 */
+.profile-card__photo-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 .profile-card__photo {
   width: 100%;
@@ -154,6 +163,7 @@
   font-weight: bold;
   color: #1b3022;
 }
+/* 링크 호버 */
 .profile-info__maillink,
 .profile-info__tel,
 .profile-info__gitlink,
@@ -165,9 +175,11 @@
   word-break: break-all;
   transition: color 0.2s;
 }
-.profile-info__item a:hover {
+.profile-info__item a:hover,
+.profile-info__tel:hover {
   color: #ff8753;
   text-decoration: underline;
+  cursor: pointer;
 }
 /*오른쪽*/
 /* 프로필 */
