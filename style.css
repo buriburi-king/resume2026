@@ -1,4 +1,4 @@
-/* 메뉴 */
+/*--------------------메뉴--------------------*/
 .header__menu-list {
   display: flex;
   width: 1040px;
@@ -39,7 +39,7 @@
   background-color: #9c9888;
   color: #333;
 }
-/*1page*/
+/*--------------------1page--------------------*/
 /* bg */
 .profile-card {
   width: 1040px;
@@ -242,7 +242,7 @@
   font-size: 18px;
   color: #000;
 }
-/*2page*/
+/*--------------------2page--------------------*/
 /*bg*/
 .intro {
   width: 1040px;
