@@ -36,7 +36,7 @@ img {
 /* 이미지 깨짐 방지 (너비 100 맥스 너비로 변경) */
 body {
   min-width: 320px;
-  background: linear-gradient(135deg, #1b3022 0%, #0d1a12 100%);
+  background: #1b3022;
   color: #000;
   line-height: 1.5;
 }
