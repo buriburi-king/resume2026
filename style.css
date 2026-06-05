@@ -237,15 +237,37 @@
 .profile-skills__stick-bar {
   height: 100%;
   border-radius: 10px;
+  /*스틱바 시작부분*/
+  width: 0%;
 }
+/*애니메이션 추가 */
 .profile-skills__stick-bar--html {
   background-color: #254c34;
+  animation: fill-html 2s ease-out forwards;
 }
 .profile-skills__stick-bar--css {
   background-color: #4a7c59;
+  animation: fill-css 2s ease-out forwards;
 }
 .profile-skills__stick-bar--git {
   background-color: #9cb380;
+  animation: fill-git 3s ease-out forwards;
+}
+/* 들어갈 애니메이션 키 프레임 텐션 주는거 */
+@keyframes fill-html {
+  to {
+    width: 85%;
+  }
+}
+@keyframes fill-css {
+  to {
+    width: 90%;
+  }
+}
+@keyframes fill-git {
+  to {
+    width: 80%;
+  }
 }
 .profile-skills__percent {
   font-size: 18px;
