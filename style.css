@@ -103,7 +103,7 @@ body {
   transition:
     transform 0.4s ease,
     box-shadow 0.4s ease;
-  cursor: pointer;
+  cursor: default;
 }
 /* 호버 */
 .profile-card__photo-box:hover {
@@ -382,13 +382,13 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 16px;
   padding: 40px 30px;
-  width: 480px;
+  width: 100%;
   min-height: 182px;
   /* 트랜지션*/
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
   cursor: pointer;
   transform: scale(1);
-  transition: all 0.5s cubic-bezier(0.1, 0.9, 0.9, 0.1);
+  transition: all 0.5s cubic-bezier(0.9, 0.1, 0.1, 0.9);
 }
 /* 카드 소제목 */
 .intro-card__title {
@@ -396,7 +396,7 @@ body {
   font-weight: bold;
   color: #1b3022;
   text-align: center;
-  transition: all 0.5s cubic-bezier(0.1, 0.9, 0.9, 0.1);
+  transition: all 0.5s cubic-bezier(0.9, 0.1, 0.1, 0.9);
 }
 /*카드 본문*/
 .intro-card__content {
@@ -488,10 +488,19 @@ body {
 .project-item__badge-side {
   flex-shrink: 0;
 }
+.project-item__badge-side a {
+  display: inline-block;
+  cursor: pointer;
+}
 .project-item__badge-img {
   width: 224px;
   height: auto;
   object-fit: contain;
+  transition: all 0.3s ease;
+}
+.project-item__badge-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 /* 웹 */
 .project-item__img-wrap {
@@ -560,16 +569,19 @@ body {
   font-weight: bold;
   color: #1b3022;
   text-align: center;
+  margin-bottom: 10px;
 }
 .hobby__image,
 .hobby__video {
   width: 100%;
   height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   display: block;
   transform: scale(1);
-  transition: 0.2s;
+  transition: 0.4s;
 }
 .hobby__media-item:hover .hobby__image,
 .hobby__media-item:hover .hobby__video {
