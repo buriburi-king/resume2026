@@ -1,4 +1,16 @@
 /*--------------------메뉴--------------------*/
+/* 새 링크 넘어갈때 페이드인아웃 적용 */
+body {
+  animation: fadein 0.3s ease-in-out;
+}
+@keyframes fadein {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .header__menu-list {
   display: flex;
   width: 1040px;
@@ -95,7 +107,7 @@
 }
 /* 호버 */
 .profile-card__photo-box:hover {
-  transform: scale(1.03);
+  transform: scale(0.96);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 .profile-card__photo {
@@ -251,11 +263,11 @@
 /*애니메이션 추가 */
 .profile-skills__stick-bar--html {
   background-color: #254c34;
-  animation: fill-html 2s ease-out forwards;
+  animation: fill-html 3s ease-out forwards;
 }
 .profile-skills__stick-bar--css {
   background-color: #4a7c59;
-  animation: fill-css 2s ease-out forwards;
+  animation: fill-css 3s ease-out forwards;
 }
 .profile-skills__stick-bar--git {
   background-color: #9cb380;
@@ -495,10 +507,17 @@
 .project-item__img-item {
   width: 100%;
   line-height: 0;
+  overflow: hidden;
+  cursor: pointer;
 }
 .project-item__img {
   width: 100%;
   height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.project-item__img-item:hover .project-item__img {
+  transform: scale(0.96);
 }
 /*--------------------4page--------------------*/
 .hobby {
@@ -520,19 +539,21 @@
   margin-top: 185px;
   margin-bottom: 200px;
 }
-.hobby__midia-list {
+.hobby__media-list {
   display: flex;
   flex-direction: column;
-  gap: 200px;
+  gap: 100px;
   width: 100%;
   align-items: center;
 }
-.hobby__midia-item {
+.hobby__media-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   width: 900px;
+  overflow: hidden;
+  border-radius: 8px;
 }
 .hobby__media-text {
   font-size: 30px;
@@ -547,4 +568,11 @@
   border-radius: 8px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   display: block;
+  transform: scale(1);
+  transition: 0.2s;
+}
+.hobby__media-item:hover .hobby__image,
+.hobby__media-item:hover .hobby__video {
+  transform: scale(0.96);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03);
 }
