@@ -282,3 +282,9 @@
   margin: 0 5px;
 }
 /* CARD */
+.intro__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 300px;
+}
