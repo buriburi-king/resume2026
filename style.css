@@ -606,6 +606,7 @@ body {
   font-size: 16px;
   color: #fff;
 }
+/*768 ------------------------*/
 /* 1page 모바일 반응형 */
 @media (max-width: 767px) {
   body {
@@ -864,6 +865,287 @@ body {
   }
   .hobby__main-title {
     font-size: 26px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  /* 미디어 끼리 간격 */
+  .hobby__media-list {
+    gap: 40px;
+  }
+  /* li */
+  .hobby__media-item {
+    width: 100%;
+  }
+  .hobby__media-text {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  /* 미디어 호버*/
+  .hobby__media-item:hover .hobby__image,
+  .hobby__media-item:hover .hobby__video {
+    transform: scale(0.98);
+  }
+}
+/* 768~ 1023 *----------------------------/
+/* 1page 모바일 반응형 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-color: #1b3022;
+  }
+  /*메뉴*/
+  .header__container {
+    position: relative;
+    z-index: 1;
+  }
+  .header__menu-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    width: 100%;
+    max-width: 100%;
+    margin: 40px auto 0 auto;
+    padding: 20px 40px;
+  }
+  .header__menu-item {
+    width: 100%;
+    display: block;
+  }
+  .header__menu-link {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    font-size: 20px;
+  }
+  /*프로필 전체*/
+  .profile-card {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 0 40px 60px 40px;
+    padding: 0 40px 70px 40px;
+    gap: 0;
+  }
+  .profile-card__left,
+  .profile-card__right {
+    width: 100%;
+  }
+  /* 사진 */
+  .profile-card__photo-box {
+    width: 45%;
+    min-height: 240px;
+    max-width: 306px;
+    height: auto;
+    aspect-ratio: 306 / 405;
+    margin: 50px auto 0 auto;
+  }
+  /* 왼쪽 */
+  .profile-info {
+    margin-top: 100px;
+  }
+  /* 보더박스 지우기 */
+  .profile-info__title-box {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .profile-info__title {
+    text-align: center;
+    font-size: 40px;
+  }
+  /*개인정보*/
+  .profile-info__user-box {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 0;
+    text-align: center;
+  }
+  .profile-info-list {
+    gap: 30px;
+  }
+  .profile-info__item {
+    align-items: flex-start;
+  }
+  /*상세링크*/
+  .profile-info__label-wrap {
+    justify-content: flex-start;
+  }
+  .profile-info__maillink,
+  .profile-info__tel,
+  .profile-info__gitlink,
+  .profile-info__storelink,
+  .profile-info__notionlink {
+    text-align: left;
+  }
+  /*오른쪽*/
+  .profile-intro {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 18px;
+  }
+  /*스킬*/
+  .profile-skills {
+    margin-bottom: 100px;
+  }
+  .profile-skills__title {
+    margin-bottom: 40px;
+    font-size: 26px;
+  }
+  .profile-skills__list {
+    gap: 20px;
+  }
+  /*li 정렬*/
+  .profile-skills__item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    row-gap: 20px;
+    align-items: center;
+  }
+  /*icon*/
+  .profile-skills__label-box {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+  /*게이지바*/
+  .profile-skills__sitck-box {
+    grid-column: 1;
+    margin: 0 10px 0 0;
+  }
+  .profile-skills__percent {
+    grid-column: 2;
+    width: auto;
+    text-align: right;
+  }
+  .skills-detail__list {
+    gap: 100px;
+  }
+  /*2page반응형*/
+  /*메인*/
+  .intro {
+    width: auto;
+    margin: 0 40px 40px 40px;
+  }
+  /*내부*/
+  .intro__container {
+    padding: 0 40px 70px 40px;
+  }
+  /*상단*/
+  .intro__hero {
+    margin-top: 60px;
+  }
+  .intro__main-title {
+    font-size: 34px;
+  }
+  /*강점*/
+  .intro__top-streng {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .intro__streng-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .intro__streng-5 {
+    font-size: 14px;
+  }
+  /* 구분선 */
+  .intro__divider {
+    margin: 0 3px;
+  }
+  /* 카드1열배치*/
+  .intro__grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 35px;
+  }
+  /*카드*/
+  .intro-card {
+    padding: 35px 25px;
+    min-height: 140px;
+  }
+  .intro-card__title {
+    font-size: 24px;
+  }
+  .intro-card__content {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  /* 카드호버*/
+  .intro-card:hover {
+    min-height: 240px;
+    transform: scale(1.02);
+    box-shadow: 0 15px 35px rgba(27, 48, 34, 0.15);
+  }
+  /* 3page 반응형*/
+  /*메인*/
+  .projects {
+    width: auto;
+    margin: 0 40px 60px 40px;
+  }
+  /*내부*/
+  .projects__container {
+    padding: 0 40px 70px 40px;
+  }
+  .projects__main-title {
+    font-size: 34px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  /*상단 영역 정렬*/
+  .project-item__info-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+  /*왼쪽 박스*/
+  .project-item__text-side {
+    max-width: 100%;
+  }
+  .project-item__title {
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+  .project-item__content-list {
+    gap: 20px;
+  }
+  .project-item__content-text {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  /*오른쪽 로고*/
+  .project-item__badge-side {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .project-item__badge-img {
+    width: 200px;
+  }
+  .project-item__badge-img:hover {
+    transform: scale(1.02);
+  }
+  /* 웹페이지*/
+  .project-item__img-list {
+    width: 100%;
+  }
+  /*호버*/
+  .project-item__img-item:hover .project-item__img {
+    transform: scale(1.02);
+  }
+  /* 4page 반응형*/
+  /*메인*/
+  .hobby {
+    width: auto;
+    margin: 0 40px 60px 40px;
+    padding: 0 40px 70px 40px;
+  }
+  .hobby__main-title {
+    font-size: 34px;
     margin-top: 60px;
     margin-bottom: 40px;
   }
