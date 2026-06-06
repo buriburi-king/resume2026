@@ -607,7 +607,7 @@ body {
   color: #fff;
 }
 /* 1page 모바일 반응형 */
-@media (max-width: 1020px) {
+@media (max-width: 767px) {
   body {
     background-color: #1b3022;
   }
@@ -637,10 +637,9 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 15px;
-    background-color: #f9f9f9;
-    font-size: 16px;
+    font-size: 20px;
   }
-  /*사진*/
+  /*프로필 전체*/
   .profile-card {
     display: flex;
     flex-direction: column;
@@ -661,6 +660,7 @@ body {
     aspect-ratio: 306 / 405;
     margin: 40px auto 0 auto;
   }
+  /* 왼쪽 */
   .profile-info {
     margin-top: 150px;
   }
@@ -672,6 +672,7 @@ body {
   .profile-info__title {
     text-align: center;
   }
+  /*개인정보*/
   .profile-info__user-box {
     margin-top: 150px;
     margin-bottom: 150px;
@@ -684,6 +685,7 @@ body {
   .profile-info__item {
     align-items: flex-start;
   }
+  /*상세링크*/
   .profile-info__label-wrap {
     justify-content: flex-start;
   }
@@ -728,6 +730,55 @@ body {
     text-align: right;
   }
   .skills-detail__list {
-    gap: 150px;
+    gap: 100px;
   }
+  /*2page반응형*/
+  .intro {
+    width: auto;
+    margin: 0 20px 40px 20px;
+  }
+  .intro__container {
+    padding: 0 20px 50px 20px;
+  }
+  .intro__hero {
+    margin-top: 60px;
+  }
+  .intro__main-title {
+    font-size: 26px;
+  }
+  .intro__top-streng {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .intro__streng-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .intro__streng-5 {
+    font-size: 13px;
+  }
+  .intro__divider {
+    margin: 0 3px;
+  }
+  .intro__grid {
+    grid-template-columns: 1fr;
+    row-gap: 35px;
+  }
+  .intro-card {
+    padding: 30px 20px;
+    min-height: 130px;
+  }
+  .intro-card__title {
+    font-size: 18px;
+  }
+  .intro-card__content {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .intro-card:hover {
+    min-height: 240px;
+    transform: scale(1.02);
+    box-shadow: 0 15px 35px rgba(27, 48, 34, 0.15);
+  }
+  /* 3page */
 }
