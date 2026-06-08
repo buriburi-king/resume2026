@@ -258,6 +258,7 @@ body {
   color: #000;
   text-align: right;
   transition: color 0.2s;
+  word-break: break-all;
 }
 .profile-info__item a:hover,
 .profile-info__tel:hover {
