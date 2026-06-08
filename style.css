@@ -257,7 +257,6 @@ body {
   font-size: 16px;
   color: #000;
   text-align: right;
-  word-break: break-all;
   transition: color 0.2s;
 }
 .profile-info__item a:hover,
